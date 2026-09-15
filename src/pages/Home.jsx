@@ -6,6 +6,8 @@ import { coursesSection } from "../data/CoursesSection";
 import parse from 'html-react-parser'
 import { tutorsSection , tutorList} from "../data/TutorsSection";
 import Tutors from "../components/Tutors";
+import { partnersSection} from "../data/PartnersSection";
+import Partners from "../components/Partners";
 
 function Home() {
     return (
@@ -34,6 +36,15 @@ function Home() {
                             {parse(tutorsSection.content)}
                         </div>
                         <Tutors tutorList={tutorList}/>
+                    </div>
+                </section>
+                {/* Partners */}
+                <section id="partners">
+                    <div className="tengah">
+                        <div className="kolom">
+                            {parse(partnersSection.content)}    
+                        </div>
+                        <Partners partnersSection={partnersSection}/>
                     </div>
                 </section>
             </div>
