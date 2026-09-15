@@ -8,6 +8,7 @@ import { tutorsSection , tutorList} from "../data/TutorsSection";
 import Tutors from "../components/Tutors";
 import { partnersSection} from "../data/PartnersSection";
 import Partners from "../components/Partners";
+import Contact from "../components/Contact";
 
 function Home() {
     return (
@@ -48,6 +49,8 @@ function Home() {
                     </div>
                 </section>
             </div>
+            {/* Contact */}
+            <Contact/>
             <Footer/>
         </>
     );
